@@ -9,6 +9,6 @@ Repository = "https://github.com/godspede/ComfyUI_Substring"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "godspede"
 DisplayName = "ComfyUI_Substring"
 Icon = ""
