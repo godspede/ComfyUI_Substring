@@ -30,5 +30,5 @@ NODE_CLASS_MAPPINGS = {
     "SubstringTheory": SubstringFunction,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "SubstringTheory": "Substring Node"
+    "SubstringTheory": "Substring"
 }
