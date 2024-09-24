@@ -10,7 +10,7 @@ class SubstringFunction:
         return {
             "required": {
                 "text": ('STRING', {"multiline": True}),
-                "length": ('INT', {"default": 75, "min": 0}) 
+                "length": ('INT', {"default": 75}) 
             }
         }
 
@@ -23,7 +23,11 @@ class SubstringFunction:
         if text == "undefined":
             text = ""
         
-        out = text[:length]
+        if length >= 0:
+            out = text[:length]
+        else:
+            out = text[length:]
+        
         return {"ui": {"text": (out,)}, "result": (out,)}
         
 NODE_CLASS_MAPPINGS = {
